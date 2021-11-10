@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
+import versioneer
 
 setup(
     name='redkite-pbi-tools',
-    version='0.2.41',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='Redkite DevOps tools for working with PBI',
