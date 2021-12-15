@@ -9,8 +9,7 @@ setup(
     license='MIT',
     description='Redkite DevOps tools for working with PBI',
     long_description=open('README.md').read(),
-    install_requires=['gitpython'],
-    dependency_links=['git+https://github.com/thomas-daughters/pbi-tools#release/v1.git'],
+    install_requires=['gitpython', 'pbi-tools~=1.0'],
     url='https://github.com/thomas-daughters/redkite-pbi-tools',
     author='Sam Thomas',
     author_email='sam.thomas@redkite.com'
